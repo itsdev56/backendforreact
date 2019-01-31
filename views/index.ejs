@@ -1,0 +1,16 @@
+<% include partial/header %>
+    <h1>ADD CUSTOMER</h1>
+    <form method="POST" action="/user/add">
+        FIRST NAME<br><input type="text" name="first_name">
+        <br>
+        LAST NAME<br><input type="text" name="last_name">
+        <br>
+        <input type="submit" value="SUUUubmit">
+        <br>
+    </form>
+    <ul>
+        <%users.forEach(function(i){ %>
+        <li><%=i.name%></li>
+        <%}) %>
+    </ul>
+<%include partial/footer%>
