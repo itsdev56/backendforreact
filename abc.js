@@ -15,11 +15,6 @@ var port=process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
-app.get("/",(req,res) => {
-  res.json({
-    "connection" : "success"
-  })
-})
 app.use(route);
 
 /*app.listen(server_port, server_ip_address, function () {
